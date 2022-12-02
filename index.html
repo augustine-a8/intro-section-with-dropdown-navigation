@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="./nav.js" defer></script>
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="./images/logo.svg" alt="logo svg" class="logo">
+    </div>
+    <button aria-controls="primary-header-content" aria-expanded="false" class="mobile-nav-toggle">
+      <span class="sr-only">Menu</span>
+    </button>
+    <div class="primary-header-content" id="primary-header-content" data-visible="false">
+      <nav>
+        <ul class="primary-navigation">
+          <li class="nav-flex features">
+            <a href="#" aria-expanded="false" aria-controls="features-dropdwn" id="features-link">Features
+              <div class="chevron"></div>
+            </a>
+            <ul class="dropdown-container features-dropdown-pos" data-visible="false" id="features-dropdwn">
+              <li>
+                <span><img src="./images/icon-todo.svg" alt=""></span>
+                <a href="">Todo List</a>
+              </li>
+              <li>
+                <span><img src="./images/icon-calendar.svg" alt=""></span>
+                <a href="">Calendar</a>
+              </li>
+              <li>
+                <span><img src="./images/icon-reminders.svg" alt=""></span>
+                <a href="">Remainders</a>
+              </li>
+              <li>
+                <span><img src="./images/icon-planning.svg" alt=""></span>
+                <a href="">Planning</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-flex company">
+            <a href="#" aria-expanded="false" aria-controls="company-dropdwn" id="company-link">Company
+              <div class="chevron"></div>
+            </a>
+            <ul class="dropdown-container company-dropdown-pos" data-visible="false" id="company-dropdwn">
+              <li>
+                <a href="">History</a>
+              </li>
+              <li>
+                <a href="">Our Team</a>
+              </li>
+              <li>
+                <a href="">Blog</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-btns-box">
+        <button class="btn-unstyled">Login</button>
+        <button class="btn-outline">Register</button>
+      </div>
+    </div>
+  </header>
+
+ <main class="grid">
+  <div class="hero-img-box">
+    <picture>
+      <source media="(min-width: 430px)" srcset="./images/image-hero-desktop.png">
+      <img src="./images/image-hero-mobile.png" alt="man holding laptop">
+    </picture>
+  </div>
+  <div class="cta">
+    <h1 class="text-center text-clr-black">Make <br> remote work</h1>
+    <p class="text-center text-clr-gray">
+      Get your team in sync. no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+    </p>
+    <div class="cta-btn-box">
+      <button>Learn more</button>
+    </div>
+    <div class="cta-icon-row flex">
+      <div class="cta-icon-5">
+        <img src=".//images/client-databiz.svg" alt="">
+      </div>
+      <div class="cta-icon-3">
+        <img src=".//images/client-audiophile.svg" alt="">
+      </div>
+      <div class="cta-icon-4">
+        <img src=".//images/client-meet.svg" alt="">
+      </div>
+      <div class="cta-icon-4">
+        <img src=".//images/client-maker.svg" alt="">
+      </div>
+    </div>
+  </div>
+ </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
